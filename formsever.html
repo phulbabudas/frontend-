@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+
+<body>
+    Name: <input type="text" name="name" id="name" maxlength="10" placeholder="Type Your name">
+    <br> <br>
+    Email: <input type="email" name="email" id="email" placeholder="Type Your email">
+    <br> <br>
+    dob:<input type="dob" name="dob"placeholder="dob"><br><br>
+    <button onclick="myFunction()">Submit</button>
+</body>
+
+<script>
+    function myFunction () {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const dob   =document.getElementById("dob")
+        if(!email && !name && !dob) {
+            alert("Name and Email are required!!")
+        } else if(!email) {
+            alert("Email is required!!")
+        } else if(!name) {
+            alert("Name is required!!")
+         } else if(!dob){
+            alert("dob is required!!")
+          }      
+    
+        
+    }
+</script>
+
+</html>

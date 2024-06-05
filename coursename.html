@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <main>
+    <form>
+        <div>
+          <label for="name">Name</label>
+          <input id="name" type="text" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" />
+        </div>
+        <div>
+          <label for="cours">full developer frounten and backend cours</label>
+          <select id="cours">
+            <option value="php">php</option>
+            <option value="java">java</option>
+            <option value="css">CSS</option>
+            <option value="js">js</option>
+            <option value="html"></option>
+          </select>
+        </div>
+        <div>
+          <fieldset>
+            <legend>Do you want to do developer course?</legend>
+            <input type="radio" name="grid" id="yes" value="yes" />
+            <label for="yes">Yes</label>
+            <input type="radio" name="grid" id="no" value="no" />
+            <label for="no">No</label>
+          </fieldset>
+        </div>
+        <div class="full-width">
+          <label for="message">Message</label>
+          <textarea id="message"></textarea>
+        </div>
+        <div class="full-width">
+          <input type="checkbox" id="newsletter" />
+          <label for="newsletter">Receive our newsletter?</label>
+        </div>
+        <div class="full-width">
+          <button type="submit">Send Response</button>
+          <button type="reset">Clear Form</button>
+        </div>
+      </form>
+    </main>
+</body>
+</html>

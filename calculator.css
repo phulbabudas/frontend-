@@ -1,0 +1,104 @@
+*{ 
+    /* star ko sallect karne se all elimenet me work karta hai */
+ margin: 2%; 
+ /* magin upar de propty ka gap milta hai  */
+padding: 5%;
+/* padding se siding se gap milta hai */
+box-sizing: border-box;
+/* box sizing border-box se bordelrn ke side me aa jata hai */
+font-family: sans-serif;
+/*font-family all elimenent ke  work karta hai */
+font-weight: bold;
+/* font-weight bolt se box ko dekhane se achha lagta hai */
+font-size: 13px;
+/* font-size px se box ka size kam bara kar kar sakte hai */
+color:green;
+/* color se box  me rang dal sakte hai */
+border-color: aqua;
+/* border-color se box ke border ka rang chhenge karna  */
+}
+.container{
+    /* .container  se all display jo div class  me work karne ke
+    liye kiya jata hai */
+    height: 100vh;
+    /*.container ke under me height likha jata hai   */
+    display: flex;
+    /* display flex se jo bhi box ready kiye hai ve sabhi isahi se display ho  */
+
+    justify-content: center;
+    /* justify content se pur box ko center me kiya jata hai  */
+    align-items: center;
+    /* aling -items ko jo bhi box me text item ho ve center me aa jaye  */
+}
+ .calculator{ 
+    /* calculator ke ander ka wwork  */
+    border-color: aqua;
+    /* calculator ke box ke boder ka corol dalna  */
+    padding:65px ;
+    /* padding se chahro side ka size dalna  */
+    border-radius: 40px;
+    /* boder-radius ke size ka round ko dalna  */
+    box-shadow: inset 5px 5px 12px #ae8999,
+    /* box shadow se box ke undrki  our ka gorai ke liye hota hai */
+     5px 5px 12px rgb(0,0,0,0.14);
+     /*under ke  jo golai ka size hoga uska color dalna  */
+     display: grid;
+     /* display grid karne se achha se desining karne ke liye kiya jata hai
+     yani ek line me karne ke liye gride kiya jata hai  */
+
+     grid-template-columns: repeat(4,70px);
+     /* grid template columns ke matlat hota hai
+     colume ko line by line me sajana 
+     and size dalna   */
+}
+input{
+    /* input type me kuchha likhane kiye paryoge kiya jatahai*/
+    grid-column: span 4;
+    /* grid-colume  spanme box ko golai karmne keliye kiya jata hai */
+    width: 260px;
+    /* width colume ka size ke liye px me */
+    height: 70px;
+    /* height coliume ka size ke liye kiya jata hai px me  */
+    background-color: rgb(224, 203, 176);
+    /*  box ke under me jo text likha rahata hai uska bakgrond color chhenge karna   */
+    border: none;
+    /* boder node ka matlab boder nhi diya gaya hai  */
+    box-shadow: inset -5px -5px 12px #b95252,
+    /* box shodow inset se chhoro uor ke color and size ko bdala ya likha jata hai */
+    inset 5px 5px 12px rgb(0,0,0,0.14);
+
+     border-radius: 30px;
+     /* border radius ke size chhengkarna ya dalna  */
+outline: none;
+/* outline me bahar ki our jo border hota hai */
+font-size: 50px;
+/* outline me lka size  */
+text-align: end;
+margin:  4px auto;
+padding: 15px;
+outline: 3px dashed yellow;
+}
+input::placeholder{
+    color: #4a03bd;
+}
+button{
+ width: 48px;   
+ height:48px ;
+ background-color: #791749;
+ box-shadow: inset -5px -5px 12px #d6d3d3,
+    inset 5px 5px 12px rgba(159, 47, 47, 0.14);
+    border-radius: 50px;
+    margin: 8px auto;
+    
+}
+.equal{
+    width: 115px;
+    border-radius: 40px;
+    margin: 8px 12px;
+}
+.calculator h1{
+    font-size: 40px;
+    padding: 6px;
+    margin: 9px;
+    border-radius: 5px;
+}
